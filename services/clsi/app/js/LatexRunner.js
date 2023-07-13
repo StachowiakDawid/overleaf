@@ -95,6 +95,12 @@ function runLatex(projectId, options, callback) {
           }
         }
       }
+      if (compiler === 'tectonic') {
+        fs.rename(Path.join(directory, mainFile.replace('tex', 'pdf')), Path.join(directory, 'output.pdf'), function (err) {
+          if (err) logger.debug(err)
+          if (err) throw err
+        })
+      }
       // record output files
       _writeLogOutput(projectId, directory, output, () => {
         callback(error, output)
@@ -143,6 +149,7 @@ function killLatex(projectId, callback) {
 }
 
 function _buildLatexCommand(mainFile, opts = {}) {
+  if (opts.compiler === 'tectonic') return ['tectonic', '--keep-logs', Path.join('$COMPILE_DIR', mainFile)] 
   const command = []
 
   if (Settings.clsi?.strace) {
