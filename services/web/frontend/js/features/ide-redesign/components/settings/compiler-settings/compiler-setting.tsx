@@ -23,6 +23,10 @@ const OPTIONS: Option<ProjectCompiler>[] = [
     value: 'lualatex',
     label: 'LuaLaTeX',
   },
+  {
+    value: 'tectonic',
+    label: 'Tectonic',
+  }
 ]
 
 export default function CompilerSetting() {
