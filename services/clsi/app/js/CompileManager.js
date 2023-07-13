@@ -38,11 +38,12 @@ const KNOWN_LATEXMK_RULES = new Set([
   'lualatex',
   'makeindex',
   'pdflatex',
+  'tectonic',
   'xdvipdfmx',
   'xelatex',
 ])
 
-const LATEX_PASSES_RULES = new Set(['latex', 'lualatex', 'xelatex', 'pdflatex'])
+const LATEX_PASSES_RULES = new Set(['latex', 'lualatex', 'xelatex', 'pdflatex', 'tectonic'])
 
 function getCompileName(projectId, userId) {
   if (userId != null) {

@@ -166,7 +166,7 @@ index 6f11297248ee..19370684dd80 100644
 -const { getBlobLocation } = require('../History/HistoryManager')
 +const { getFilestoreBlobURL } = require('../History/HistoryManager')
 
- const VALID_COMPILERS = ['pdflatex', 'latex', 'xelatex', 'lualatex']
+ const VALID_COMPILERS = ['pdflatex', 'latex', 'xelatex', 'lualatex', 'tectonic']
  const OUTPUT_FILE_TIMEOUT_MS = 60000
 @@ -755,8 +755,7 @@ function _finaliseRequest(projectId, options, project, docs, files) {
      let url = filestoreURL
