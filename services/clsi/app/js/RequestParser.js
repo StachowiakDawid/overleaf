@@ -1,6 +1,6 @@
 const settings = require('@overleaf/settings')
 
-const VALID_COMPILERS = ['pdflatex', 'latex', 'xelatex', 'lualatex']
+const VALID_COMPILERS = ['pdflatex', 'latex', 'xelatex', 'lualatex', 'tectonic']
 const MAX_TIMEOUT = 600
 
 function parse(body, callback) {
