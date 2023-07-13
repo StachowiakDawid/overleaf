@@ -31,6 +31,10 @@ export default function SettingsCompiler() {
           value: 'lualatex',
           label: 'LuaLaTeX',
         },
+        {
+          value: 'tectonic',
+          label: 'Tectonic',
+        },
       ]}
       label={t('compiler')}
       name="compiler"
