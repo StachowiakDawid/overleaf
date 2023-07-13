@@ -2,7 +2,7 @@ const { Project } = require('../../models/Project')
 const settings = require('@overleaf/settings')
 const { callbackify } = require('util')
 const { db, ObjectId } = require('../../infrastructure/mongodb')
-const safeCompilers = ['xelatex', 'pdflatex', 'latex', 'lualatex']
+const safeCompilers = ['xelatex', 'pdflatex', 'latex', 'lualatex', 'tectonic']
 
 const ProjectOptionsHandler = {
   async setCompiler(projectId, compiler) {

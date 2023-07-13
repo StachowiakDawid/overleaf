@@ -26,7 +26,7 @@ const Metrics = require('@overleaf/metrics')
 const Errors = require('../Errors/Errors')
 const { getBlobLocation } = require('../History/HistoryManager')
 
-const VALID_COMPILERS = ['pdflatex', 'latex', 'xelatex', 'lualatex']
+const VALID_COMPILERS = ['pdflatex', 'latex', 'xelatex', 'lualatex', 'tectonic']
 const OUTPUT_FILE_TIMEOUT_MS = 60000
 const CLSI_COOKIES_ENABLED = (Settings.clsiCookie?.key ?? '') !== ''
 
