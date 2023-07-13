@@ -196,7 +196,7 @@ describe('ClsiManager', function () {
       },
       enablePdfCaching: true,
       clsiCookie: { key: 'clsiserver' },
-      safeCompilers: ['pdflatex', 'latex', 'xelatex', 'lualatex'],
+      safeCompilers: ['pdflatex', 'latex', 'xelatex', 'lualatex', 'tectonic'],
       defaultLatexCompiler: 'pdflatex',
       allowedImageNames: [
         { imageName: 'mock-image-name', hasCheckpointing: true },
