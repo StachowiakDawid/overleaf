@@ -75,7 +75,7 @@ const httpPermissionsPolicy = {
   },
 }
 
-const safeCompilers = ['xelatex', 'pdflatex', 'latex', 'lualatex']
+const safeCompilers = ['xelatex', 'pdflatex', 'latex', 'lualatex', 'tectonic']
 
 module.exports = {
   env: 'server-ce',
