@@ -4,7 +4,7 @@ import { callbackify } from 'node:util'
 import { db, ObjectId } from '../../infrastructure/mongodb.mjs'
 import Errors from '../Errors/Errors.js'
 import mongodb from 'mongodb-legacy'
-const safeCompilers = ['xelatex', 'pdflatex', 'latex', 'lualatex']
+const safeCompilers = ['xelatex', 'pdflatex', 'latex', 'lualatex', 'tectonic']
 
 const { ReturnDocument } = mongodb
 
