@@ -5,6 +5,12 @@
 ARG OVERLEAF_BASE_TAG=sharelatex/sharelatex-base:latest
 FROM $OVERLEAF_BASE_TAG
 
+ARG TECTONIC_URL=https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.15.0/tectonic-0.15.0-arm-unknown-linux-musleabihf.tar.gz
+RUN wget -q $TECTONIC_URL -O - | tar -xzvf - -C /usr/local/bin
+RUN chmod +x /usr/local/bin/tectonic
+RUN mkdir -p /var/www/.cache/Tectonic
+RUN chown -R www-data /var/www/.cache/Tectonic
+
 WORKDIR /overleaf
 
 # Add required source files

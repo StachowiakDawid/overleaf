@@ -14,6 +14,7 @@ const ENGINE_TO_COMPILER_MAP = {
   pdflatex: 'pdflatex',
   xelatex: 'xelatex',
   lualatex: 'lualatex',
+  tectonic: 'tectonic',
 }
 
 export default {
